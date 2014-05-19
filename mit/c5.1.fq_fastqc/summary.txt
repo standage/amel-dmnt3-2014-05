@@ -1,0 +1,11 @@
+PASS	Basic Statistics	c5.1.fq
+PASS	Per base sequence quality	c5.1.fq
+PASS	Per sequence quality scores	c5.1.fq
+FAIL	Per base sequence content	c5.1.fq
+FAIL	Per base GC content	c5.1.fq
+WARN	Per sequence GC content	c5.1.fq
+PASS	Per base N content	c5.1.fq
+PASS	Sequence Length Distribution	c5.1.fq
+FAIL	Sequence Duplication Levels	c5.1.fq
+PASS	Overrepresented sequences	c5.1.fq
+WARN	Kmer Content	c5.1.fq

@@ -1,0 +1,11 @@
+PASS	Basic Statistics	c1_2.fq
+PASS	Per base sequence quality	c1_2.fq
+PASS	Per sequence quality scores	c1_2.fq
+FAIL	Per base sequence content	c1_2.fq
+FAIL	Per base GC content	c1_2.fq
+FAIL	Per sequence GC content	c1_2.fq
+PASS	Per base N content	c1_2.fq
+PASS	Sequence Length Distribution	c1_2.fq
+FAIL	Sequence Duplication Levels	c1_2.fq
+WARN	Overrepresented sequences	c1_2.fq
+WARN	Kmer Content	c1_2.fq

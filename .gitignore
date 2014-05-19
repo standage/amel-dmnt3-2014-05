@@ -1,0 +1,15 @@
+rnaseq/*.sra
+rnaseq/*.fastq
+rnaseq/*.fq
+rnaseq/*_fastqc.zip
+mit/*.bwa.log
+mit/*.fq
+mit/*.fastqc.zip
+mit/hym-mit-gen.fa.*
+trim/*.fq
+trim/*_fastqc.zip
+cufflinks/alignments
+cufflinks/assemblies
+cufflinks/cuffdiff
+cufflinks/iloci
+cufflinks/logs

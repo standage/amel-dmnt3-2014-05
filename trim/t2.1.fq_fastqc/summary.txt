@@ -1,0 +1,11 @@
+PASS	Basic Statistics	t2.1.fq
+PASS	Per base sequence quality	t2.1.fq
+PASS	Per sequence quality scores	t2.1.fq
+WARN	Per base sequence content	t2.1.fq
+PASS	Per base GC content	t2.1.fq
+WARN	Per sequence GC content	t2.1.fq
+PASS	Per base N content	t2.1.fq
+WARN	Sequence Length Distribution	t2.1.fq
+FAIL	Sequence Duplication Levels	t2.1.fq
+PASS	Overrepresented sequences	t2.1.fq
+PASS	Kmer Content	t2.1.fq

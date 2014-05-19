@@ -1,0 +1,11 @@
+PASS	Basic Statistics	c4_1.fq
+PASS	Per base sequence quality	c4_1.fq
+PASS	Per sequence quality scores	c4_1.fq
+FAIL	Per base sequence content	c4_1.fq
+FAIL	Per base GC content	c4_1.fq
+WARN	Per sequence GC content	c4_1.fq
+PASS	Per base N content	c4_1.fq
+PASS	Sequence Length Distribution	c4_1.fq
+FAIL	Sequence Duplication Levels	c4_1.fq
+WARN	Overrepresented sequences	c4_1.fq
+WARN	Kmer Content	c4_1.fq
