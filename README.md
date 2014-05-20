@@ -51,6 +51,7 @@ The authors of the *dmtn3* KD paper reported 2613 differentially expressed genes
 Since the authors do not disclose the TrueSight DEG list, a simple comparison to determine the level of agreement with the Tuxedo DEG list is impossible.
 The authors do, however, report a list of Gene Ontology terms that are overrepresented in the TrueSight DEGs.
 GO analysis of the Tuxedo DEGs using, for instance, BLAST2GO would enable a high-level comparison of the putative functional repertoire of the two DEG lists, as a proxy for computing their congruence.
+However, as the focus of this analysis is differential splicing and not differential expression, I have not yet followed up on this.
 
 ### Differentially spliced genes
 
@@ -60,7 +61,23 @@ This result stands in stark contrast to the 524 differentially spliced genes rep
 
 ## Discussion
 
-Coming soon...
+The result reported here is surprising and unfortunate.
+I have little confidence in the result I have reported, but am unsure as to where the analysis went wrong.
+Perhaps there is a problem with the data, although this seems unlikely given the results reported in the *dmnt3* KD paper.
+Perhaps there is a problem with the way I ran the Tuxedo pipeline---this is much more likely, given that I made few attempts to refine parameter settings.
+Perhaps there is something about this data that makes Cufflinks an ill-suited tool for the analysis.
+
+After obtaining this result, my first instinct was to attempt to reproduce the original analysis as reported in the paper itself.
+The only reference in the paper to their methodology for analyzing differential splicing is the following sentence in the supplement.
+
+> **Analysis of Alternative Splicing**. AS was annotated with the same procedure described in ref. 3.
+
+Here, "ref. 3" refers to a paper describing the TrueSight RNA-Seq alignment algorithm.
+The supplement of the TrueSight paper does indeed provide a description (in English, no code) of how they used RNA-Seq data to improve their annotation of different isoforms.
+However, there is no description or mention of a method for characterizing differential splicing across a particular contrast.
+Even as a (technically) competent genome informatics scientist, my hopes of successfully reproducing the results reported in the *dmnt3* KD paper without substantial involvement and time investment from the authors of the TrueSight paper are essentially nil.
+
+&lt;rant&gt;&lt;/rant&gt;
 
 ## Appendix
 
