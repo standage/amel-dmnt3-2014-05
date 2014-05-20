@@ -36,7 +36,10 @@ The procedure in ``mit/0README-clean.sh`` was used to remove mt-rRNA contaminati
 
 ### Alignment and assembly with the Tuxedo pipeline
 
-Coming soon...
+The Tophat aligner was used to align the groomed RNA-Seq data, sample by sample, to *A. mellifera* loci, derived from OGS 3.2 (temporarily unavailable) using LocusPocus (citation needed).
+Then the Cufflinks assembler was used to reconstruct, sample by sample, the transcript structures from the aligned RNA-Seq reads.
+The ``cuffmerge`` tool was used to generate a consensus assembly from all 12 samples, and then finally the ``cuffdiff`` tool was used to analyse transcript expression and processing.
+See ``0README-01-tophat.sh``, ``0README-02-cufflinks.sh``, ``0README-03-cuffmerge.sh``, ``0README-04-cuffdiff.sh`` for the precise commands used.
 
 ## Results
 
@@ -48,4 +51,43 @@ Coming soon...
 
 ## Appendix
 
-Coming soon...
+```bash
+# Download the analysis scripts
+cd /tmp
+git clone https://github.com/standage/amel-dmnt3-2014-05.git
+cd amel-dmnt3-2014-05
+
+# Check to make sure software prerequisites are installed.
+# Don't continue until this script produces no warnings.
+./env.sh
+
+# Prepare the data
+cd mit
+bwa index hym-mit-gen.fa
+cd ../cufflinks/iloci
+gunzip Amel.iloci.fa.gz
+cd ../..
+
+# Download the RNA-Seq data and examine for quality issues
+cd rnaseq
+bash 0README-download.sh
+bash 0README-qc.sh
+cd ..
+
+# Groom reads
+cd mit
+bash 0README-clean.sh
+bash 0README-qc.sh
+cd ../trim
+bash 0README-trim.sh
+bash 0README-qc.sh
+cd ..
+
+# Run the Tuxedo pipeline to assemble transcripts and analyze their expression & processing.
+cd cufflinks
+mkdir logs
+bash 0README-01-tophat.sh > logs/tophat.log 2>&1
+bash 0README-02-cufflinks.sh > logs/cufflinks.log 2>&1
+bash 0README-03-cuffmerge.sh > logs/cuffmerge.log 2>&1
+bash 0README-04-cuffdiff.sh > logs/cuffdiff.log 2>&1
+```

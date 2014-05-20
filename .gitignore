@@ -9,8 +9,11 @@ mit/hym-mit-gen.fa.*
 trim/*.fq
 trim/*_fastqc.zip
 cufflinks/alignments
-cufflinks/assemblies
+cufflinks/assemblies/c*
+cufflinks/assemblies/t*
+cufflinks/assemblies/merged
 cufflinks/cuffdiff
-cufflinks/iloci
+cufflinks/iloci/*.bt2
+cufflinks/iloci/*.fai
 cufflinks/logs
 scratch

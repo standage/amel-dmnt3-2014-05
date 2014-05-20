@@ -1,0 +1,12 @@
+assemblies/c1/transcripts.gtf
+assemblies/c2/transcripts.gtf
+assemblies/c3/transcripts.gtf
+assemblies/c4/transcripts.gtf
+assemblies/c5/transcripts.gtf
+assemblies/c6/transcripts.gtf
+assemblies/t1/transcripts.gtf
+assemblies/t2/transcripts.gtf
+assemblies/t3/transcripts.gtf
+assemblies/t4/transcripts.gtf
+assemblies/t5/transcripts.gtf
+assemblies/t6/transcripts.gtf
