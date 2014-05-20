@@ -43,6 +43,16 @@ See ``0README-01-tophat.sh``, ``0README-02-cufflinks.sh``, ``0README-03-cuffmerg
 
 ## Results
 
+### Differentially expressed genes
+
+Cufflinks identified 2465 genes differentially expressed between the control and the treatment ("Tuxedo DEGs" hereafter).
+The authors of the *dmtn3* KD paper reported 2613 differentially expressed genes ("TrueSight DEGs" herefafter), fairly similar to the results reported here.
+Since the authors do not disclose the TrueSight DEG list, a simple comparison to determine the level of agreement with the Tuxedo DEG list is impossible.
+The authors do, however, report a list of Gene Ontology terms that are overrepresented in the TrueSight DEGs.
+GO analysis of the Tuxedo DEGs using, for instance, BLAST2GO would enable a high-level comparison of the putative functional repertoire of the two DEG lists, as a proxy for computing their congruence.
+
+### Differentially spliced genes
+
 Coming soon...
 
 ## Discussion
