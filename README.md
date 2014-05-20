@@ -8,12 +8,13 @@ Bloomington, IN 47405
 ## Overview
 
 A recent PNAS paper describes a [*dmnt3* knockdown experiment in *Apis mellifera*](http://dx.doi.org/10.1073/pnas.1310735110).
+As *dmnt3* is required for DNA methylation, the authors were interested in exploring the effect of inhibited methylation on gene expression and, more particularly, gene splicing.
 Illumina RNA-Seq was used to measure differences in expression and splicing between the control and treatment groups.
-They report a large number of genes that are either differentially expressed (2613) or differentially spliced (524) between the control and treatment groups.
+The authors reported a large number of genes that are either differentially expressed (2613) or differentially spliced (524) between the control and treatment groups.
 
-In our research group we are interested in investigating similar questions of differential expression and alternative splicing across an experimental contrast.
-Here I describe my efforts to reproduce this analysis using a pretty canonical invocation of the Tuxedo toolkit (Bowtie2, Tophat, and Cufflinks).
-The raw data files, intermediate data files, and final results are too large to include in this repository, but I've made every effort to faciliate trivial replication of the analysis on a UNIX / Linux system.
+In our research group we are interested in investigating similar questions of differential expression and alternative splicing across experimental contrasts.
+Here I describe my efforts to reproduce this analysis using a fairly canonical invocation of the Tuxedo toolkit (Bowtie2, Tophat, and Cufflinks).
+The raw data files, intermediate data files, and final results are too large to include in this repository, but scripts and documentation included with this repository are intended to facilitate automated replication of the analysis on any UNIX-like system (such as Mac OS X or Linux).
 
 ## Materials and Methods
 
