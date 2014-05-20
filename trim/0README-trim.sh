@@ -1,13 +1,9 @@
-NUMTHREADS=64
-JAR=/usr/local/src/NGS-DIR/TRIMMOMATIC/Trimmomatic-0.32/trimmomatic-0.32.jar
-ADPTRS=/usr/local/src/NGS-DIR/TRIMMOMATIC/Trimmomatic-0.32/adapters/all-PE.fa
-
 for cond in c t
 do
   for rep in {1..6}
   do
     sample=${cond}${rep}
-    java -jar $JAR PE \
+    java -jar $TRIMJAR PE \
          -threads $NUMTHREADS \
          -phred33 \
          ../mit/${sample}.1.fq \

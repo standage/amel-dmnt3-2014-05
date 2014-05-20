@@ -61,13 +61,6 @@ cd amel-dmnt3-2014-05
 # Don't continue until this script produces no warnings.
 ./env.sh
 
-# Prepare the data
-cd mit
-bwa index hym-mit-gen.fa
-cd ../cufflinks/iloci
-gunzip Amel.iloci.fa.gz
-cd ../..
-
 # Download the RNA-Seq data and examine for quality issues
 cd rnaseq
 bash 0README-download.sh
@@ -85,6 +78,7 @@ cd ..
 
 # Run the Tuxedo pipeline to assemble transcripts and analyze their expression & processing.
 cd cufflinks
+gunzip iloci/Amel.iloci.fa.gz
 mkdir logs
 bash 0README-01-tophat.sh > logs/tophat.log 2>&1
 bash 0README-02-cufflinks.sh > logs/cufflinks.log 2>&1

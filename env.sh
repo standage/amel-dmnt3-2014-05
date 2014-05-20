@@ -10,11 +10,13 @@ filetry()
   test $1 || echo "Cannot find file $1" 1>&1
 }
 
-# Manually edit the location of the Trimmomatic .jar file you've downloaded to your system
-TRIMJAR=/usr/local/src/NGS-DIR/TRIMMOMATIC/Trimmomatic-0.32/trimmomatic-0.32.jar
+# Manually set the number of threads to use for Trimmomatic, Tophat, and Cufflinks.
+export NUMTHREADS=32
+# Manually edit the location of the Trimmomatic .jar file you've downloaded to your system.
+export TRIMJAR=/usr/local/src/NGS-DIR/TRIMMOMATIC/Trimmomatic-0.32/trimmomatic-0.32.jar
 # Manually edit the location o f the Illlumina adapters file on your system.
 # I simply ran 'cat *-PE.fa > all-PE.fa' in the 'adapters' directory.
-ADPTRS=/usr/local/src/NGS-DIR/TRIMMOMATIC/Trimmomatic-0.32/adapters/all-PE.fa
+export ADPTRS=/usr/local/src/NGS-DIR/TRIMMOMATIC/Trimmomatic-0.32/adapters/all-PE.fa
 
 
 swtry fastq-dump      # SRA toolkit: http://eutils.ncbi.nih.gov/Traces/sra/?view=software

@@ -1,5 +1,3 @@
-export PATH=/usr/local/src/NGS-DIR/TOPHAT/tophat-2.0.11.Linux_x86_64:$PATH
-
 bwa index hym-mit-gen.fa
 for cond in c t
 do
