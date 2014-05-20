@@ -18,17 +18,21 @@ The raw data files, intermediate data files, and final results are too large to 
 
 ## Materials and Methods
 
+This section provides a brief description of the methods used in the analysis.
+See the appendix for a more complete disclosure of the precise commands used.
+
 ### RNA-Seq data
 
 Twelve RNA-Seq libraries associated with this experiment are available from the NCBI Short Read Archive under the accession [SRP024289](http://www.ncbi.nlm.nih.gov/sra/?term=SRP024289).
 Six samples have the suffix ``c``, indicating control samples, while the other six samples have the suffix ``t``, indicating RNAi treatment for *dmnt3* knockdown.
-See ``rnaseq/0README-download.sh`` for an automated procedure to download, reformat, and rename the RNA-Seq data.
-See ``rnaseq/0README-qc.sh`` for an automated procedure to examine the sequence data for issues.
+The procedure in ``rnaseq/0README-download.sh`` was used to download, reformat, and rename the RNA-Seq data, and the procedure in ``rnaseq/0README-qc.sh`` was used to examine the sequence data for issues.
 
 ### Data grooming
 
-Examination of the data revealed approximately 10% contamination with mitochondrial rRNA sequence across all samples, as well as compositional biases in the first 10 bases of the reads.
-See ``mit/0README-clean.sh`` for an automated procedure to remove mt-rRNA contamination from the data, and ``trim/0README-trim.sh`` for an automated procedure to perform adapter removal and quality trimming on the data.
+Examination of the data revealed some quality concerns with the RNA-Seq data.
+First, approximately 10% of the reads from each library were sequenced from mitochondrial rRNAs.
+Second, the first 10 bases of the reads showed a significant level of compositional bias.
+The procedure in ``mit/0README-clean.sh`` was used to remove mt-rRNA contamination from the data, and the procedure in ``trim/0README-trim.sh`` was used to clip the first 10 bases from every read, remove adapter sequences, and perform quality trimming on the data.
 
 ### Alignment and assembly with the Tuxedo pipeline
 
@@ -39,5 +43,9 @@ Coming soon...
 Coming soon...
 
 ## Discussion
+
+Coming soon...
+
+## Appendix
 
 Coming soon...
