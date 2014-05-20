@@ -14,7 +14,8 @@ The authors reported a large number of genes that are either differentially expr
 
 In our research group we are interested in investigating similar questions of differential expression and alternative splicing across experimental contrasts.
 Here I describe my efforts to reproduce this analysis using a fairly canonical invocation of the Tuxedo toolkit (Bowtie2, Tophat, and Cufflinks).
-The raw data files, intermediate data files, and final results are too large to include in this repository, but scripts and documentation included with this repository are intended to facilitate automated replication of the analysis on any UNIX-like system (such as Mac OS X or Linux).
+Although raw input files and intermediate data files are too large to include in this repository, the output files are provided (see ``cufflinks/cuffdiff-output.tar.gz``).
+More importantly, full disclosure of all commands and code used to conduct the analysis is provided in an effort to facilitate automated replication of the analysis on any UNIX-like system (such as Mac OS X or Linux).
 
 ## Materials and Methods
 
@@ -45,7 +46,7 @@ See ``0README-01-tophat.sh``, ``0README-02-cufflinks.sh``, ``0README-03-cuffmerg
 
 ### Differentially expressed genes
 
-Cufflinks identified 2465 genes differentially expressed between the control and the treatment ("Tuxedo DEGs" hereafter).
+Cuffdiff identified 2465 genes differentially expressed between the control and the treatment ("Tuxedo DEGs" hereafter).
 The authors of the *dmtn3* KD paper reported 2613 differentially expressed genes ("TrueSight DEGs" herefafter), fairly similar to the results reported here.
 Since the authors do not disclose the TrueSight DEG list, a simple comparison to determine the level of agreement with the Tuxedo DEG list is impossible.
 The authors do, however, report a list of Gene Ontology terms that are overrepresented in the TrueSight DEGs.
@@ -53,7 +54,9 @@ GO analysis of the Tuxedo DEGs using, for instance, BLAST2GO would enable a high
 
 ### Differentially spliced genes
 
-Coming soon...
+Cuffdiff performed 3569 differential splicing tests, with only 4 cases of differential splicing between the control and treatment being identified.
+Manual examination suggests that 3 of these cases involve transcripts that were poorly reconstructed by Cufflinks.
+This result stands in stark contrast to the 524 differentially spliced genes reported in the *dmnt3* knockdown paper, a subset of which were confirmed with qPCR.
 
 ## Discussion
 

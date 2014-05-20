@@ -20,7 +20,7 @@ export ADPTRS=/usr/local/src/NGS-DIR/TRIMMOMATIC/Trimmomatic-0.32/adapters/all-P
 
 
 swtry fastq-dump      # SRA toolkit: http://eutils.ncbi.nih.gov/Traces/sra/?view=software
-swtry FastQC          # FastQC: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
+swtry fastqc          # FastQC: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
 swtry bwa             # BWA: https://github.com/lh3/bwa
 swtry samtools        # Samtools: http://samtools.github.io
 swtry bam2fastx       # bam2fastx (Tophat utility): http://tophat.cbcb.umd.edu
