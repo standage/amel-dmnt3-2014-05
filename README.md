@@ -77,7 +77,7 @@ The supplement of the TrueSight paper does indeed provide a description (in Engl
 However, there is no description or mention of a method for characterizing differential splicing across a particular contrast.
 Even as a (technically) competent genome informatics scientist, my hopes of successfully reproducing the results reported in the *dmnt3* KD paper without substantial involvement and time investment from the authors of the TrueSight paper are essentially nil.
 
-&lt;rant&gt;&lt;/rant&gt;
+&lt;rant&gt;Coming soon...&lt;/rant&gt;
 
 ## Appendix
 
