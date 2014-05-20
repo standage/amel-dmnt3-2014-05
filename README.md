@@ -1,8 +1,9 @@
 # Analysis of differential splicing in *Apis mellifera*
 
-Daniel S. Standage
-
-Department of Biology, Indiana University, Bloomington, Indiana, 47405
+Daniel S. Standage  
+Department of Biology  
+Indiana University  
+Bloomington, IN 47405
 
 ## Overview
 
