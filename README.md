@@ -61,23 +61,24 @@ This result stands in stark contrast to the 524 differentially spliced genes rep
 
 ## Discussion
 
-The result reported here is surprising and unfortunate.
-I have little confidence in the result I have reported, but am unsure as to where the analysis went wrong.
+The results reported in the *dmnt3* KD paper seem reliable, and I have little confidence in the reliability of the results I have reported.
+Unfortunately it is unclear as to where my analysis went wrong.
 Perhaps there is a problem with the data, although this seems unlikely given the results reported in the *dmnt3* KD paper.
 Perhaps there is a problem with the way I ran the Tuxedo pipeline---this is much more likely, given that I made few attempts to refine parameter settings.
 Perhaps there is something about this data that makes Cufflinks an ill-suited tool for the analysis.
 
-After obtaining this result, my first instinct was to attempt to reproduce the original analysis as reported in the paper itself.
-The only reference in the paper to their methodology for analyzing differential splicing is the following sentence in the supplement.
+Regardless of what went wrong, my first instinct after seeing these results was to attempt to reproduce the original analysis as reported in the paper itself---that is, to use the tools they use.
+Their complete describing of their methodology for analyzing differential splicing is contained in the following sentence from the supplement.
 
 > **Analysis of Alternative Splicing**. AS was annotated with the same procedure described in ref. 3.
 
 Here, "ref. 3" refers to a paper describing the TrueSight RNA-Seq alignment algorithm.
 The supplement of the TrueSight paper does indeed provide a description (in English, no code) of how they used RNA-Seq data to improve their annotation of different isoforms.
 However, there is no description or mention of a method for characterizing differential splicing across a particular contrast.
-Even as a (technically) competent genome informatics scientist, my hopes of successfully reproducing the results reported in the *dmnt3* KD paper without substantial involvement and time investment from the authors of the TrueSight paper are essentially nil.
-
-&lt;rant&gt;Coming soon...&lt;/rant&gt;
+My best guess is that the authors of the *dmnt3* KD paper ran the method described in the TrueSight paper's supplement on each sample separately, and then looked for differences in exon structure that were consistent within a treatment group but different between the treatment groups.
+However, the devil is in the details here: how is "consistent within a treatment group" measured?
+What are the precise criteria for "different between treatment groups?"
+Even as an experienced genome informatics scientist, my hopes of successfully reproducing the results reported in the *dmnt3* KD paper are quite slim and would require both a substanial amount of ground work on my part as well as assistance from the authors of the TrueSight paper.
 
 ## Appendix
 
